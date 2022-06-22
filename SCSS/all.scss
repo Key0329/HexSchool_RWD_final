@@ -1,0 +1,143 @@
+@import "reset";
+
+// variable
+
+$width: 1000px;
+
+$primary-color: #00cc99;
+$secondary-color: #072214;
+$text-color: #000;
+$border-color: gray;
+
+$fz-l: 24px;
+$fz-m: 20px;
+$fz-s: 16px;
+
+$font-family-base: "PingFang TC", "SF Pro Text", "微軟正黑體", sans-serif;
+
+// 全站設定
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: $primary-color;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: $font-family-base;
+    line-height: 1.5;
+    color: $text-color;
+}
+
+// d-flex
+
+.d-flex {
+    display: flex;
+}
+.f-jcsb {
+    justify-content: space-between;
+}
+.f-jcsa{
+    justify-content: space-around;
+}
+.f-jcc {
+    justify-content: center;
+}
+.f-jcfe {
+    justify-content: flex-end;
+}
+.f-aic {
+    align-items: center;
+}
+.f-wrp {
+    flex-wrap: wrap;
+}
+.f-fdc{
+    flex-direction: column;
+}
+
+// index
+body{
+    background: rgb(98, 98, 212);
+}
+
+.wrap{
+    max-width: $width;
+    margin: 0 auto;
+}
+
+// header
+
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    position: relative;
+    .logo{
+        width: 50px;
+        height: 50px;
+        background: blue;
+    }
+    .menu{
+        display: flex;
+        &-btn{
+            padding: 20px;
+            
+            background: $secondary-color;
+            &:hover{
+                background: $primary-color;
+                color: $secondary-color;
+            }
+        }
+    }
+
+    // 漢堡選單按鈕先隱藏
+    .ham{
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+    header{
+        .menu{
+            max-height: 0;
+            overflow: hidden;
+            /*隱藏選單結束*/
+            transition: max-height 2.3s;
+            margin-top: 1px;
+            /*絕對定位疊在網頁上*/
+            position: absolute;
+            z-index: 100;
+            /*header 80px+1px boder 線條*/
+            top: 81px;
+            left: 0;
+            right: 0;
+            background: #2a8dbb;
+            flex-direction: column;
+        }
+        .menu li{
+            border-bottom: 1px dashed #69CA62;
+            
+        }
+
+        .ham{
+            display: block;
+        }
+    }
+    .menu-show .menu{
+        max-height: 500px;
+    }
+}
