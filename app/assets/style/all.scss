@@ -1,0 +1,105 @@
+@import "reset";
+
+// variable
+
+$width: 1000px;
+
+$primary-color: #00cc99;
+$secondary-color: #072214;
+$text-color: #000;
+$border-color: gray;
+
+$fz-l: 24px;
+$fz-m: 20px;
+$fz-s: 16px;
+
+$font-family-base: "PingFang TC", "SF Pro Text", "微軟正黑體", sans-serif;
+
+// 全站設定
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: $primary-color;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: $font-family-base;
+    line-height: 1.5;
+    color: $text-color;
+}
+
+// d-flex
+
+.d-flex {
+    display: flex;
+}
+.f-jcsb {
+    justify-content: space-between;
+}
+.f-jcsa{
+    justify-content: space-around;
+}
+.f-jcc {
+    justify-content: center;
+}
+.f-jcfe {
+    justify-content: flex-end;
+}
+.f-aic {
+    align-items: center;
+}
+.f-wrp {
+    flex-wrap: wrap;
+}
+.f-fdc{
+    flex-direction: column;
+}
+
+// index
+body{
+    background: rgb(98, 98, 212);
+}
+
+.wrap{
+    max-width: $width;
+    margin: 0 auto;
+}
+
+
+// 
+
+$color: #00cc99;
+
+.header {
+  height: 200px;
+  background-color: #00cc99;
+}
+
+.footer {
+  height: 200px;
+  background-color: #00cc99;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  transition: all 0.5s;
+  &:hover {
+    width: 200px;
+    background-color: $color;
+  }
+}
