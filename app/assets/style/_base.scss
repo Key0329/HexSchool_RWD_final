@@ -7,7 +7,7 @@
 a{
     text-decoration: none;
     display: block;
-    color: $c-text;
+    color: $text-color;
 }
 
 img{
@@ -18,8 +18,19 @@ img{
 
 body {
     font-family: $font-family-base;
-    line-height: 1.5;
-    color: $c-text;
+    line-height: 1.333333;
+    color: $text-color;
+    background: $secondary-color;
+}
+
+.wrap{
+    max-width: $width;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 // d-flex
