@@ -16,6 +16,7 @@
   <title><%- title %></title>
   <link rel="icon" href="https://www.hexschool.com/favicon.ico" />
   <link rel="stylesheet" href="./assets/style/all.css">
+  <script src="https://kit.fontawesome.com/53b4bd0f37.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -36,7 +37,12 @@
       </div>
 
       <div class="banner">
-        <img src="./app/assets/images/Bitmap.png" alt="banner">
+        <img src="https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/main/app/assets/images/header_desktop.png" alt="banner">
+        <div class="slogan">
+          <h2>咬一口就無法忘懷的漢堡</h2>
+          <p>七夕絕對無法錯過的好滋味</p>
+          <p><i class="fa-solid fa-utensils"></i>六角大漢堡<i class="fa-solid fa-utensils"></i></p>
+        </div>
       </div>
 
     </header>
@@ -44,7 +50,33 @@
     <%- contents %>
   
     <footer class="footer">
-      footer
+      <div class="container d-flex f-jcsb">
+        <div class="about d-flex">
+          <div class="aboutUs">
+            <h3>關於 六角西餐廳</h3>
+            <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.</p>
+          </div>
+
+          <div class="contact">
+            <h3>聯絡方式</h3>
+            <ul>
+              <li><a class="contact_link" href="#">高雄市中正五路到底</a></li>
+              <li><a class="contact_link" href="#">+886 886 886</a></li>
+              <li><a class="contact_link" href="#">service@hexschool.com</a></li>
+            </ul>
+          </div>
+        </div>
+          
+        <div class="logo_footer">
+          <a class="logo_footer_l" title="首頁" href="https://key0329.github.io/HexSchool_RWD_final/">六角西餐廳</a>
+          <ul class="icon d-flex f-jcfe">
+              <li><a class="icon_item google+" title="google+" target="_blank" href="#"><i class="fa-brands fa-google-plus-square fa-2x"></i></a></li>
+              <li><a class="icon_item twitter" title="twitter" target="_blank" href="#"><i class="fa-brands fa-twitter-square fa-2x"></i></a></li>
+              <li><a class="icon_item facebook" title="facebook" target="_blank" href="#"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
     </footer>
 
   </div>
