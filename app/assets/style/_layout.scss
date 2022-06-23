@@ -2,12 +2,8 @@
 
 .nav{
     background: rgba(0,0,0,0.75);
-    padding: 18px 0 17px 0;
+    width: 100%;
     position: fixed;
-    max-width: $width;
-    margin: 0 auto;
-    right: 0;
-    left: 0;
     z-index: 100;
 }
 .logo{
@@ -17,83 +13,85 @@
     overflow: hidden;
     white-space: nowrap;
     text-indent: 101%;
+    margin-left: 42px;
 }
 
-.menu_btn{
-    color: #fff;
+.menu{
+    margin-right: 32px;
+    &_btn{
+        color: #fff;
     line-height: 21px;
-    margin-left: 30px;
+    padding: 18px 16px;
     &:hover{
         color: #FF5E45;
         transition: 0.3s;
+    }
     }
 }
 
 // -----------------header_banner-----------------
 
 .banner{
-    position: relative;
-}
-
-.slogan{
-    position: absolute;
-    background: rgba(0,0,0,0.35);
-    width: 460px;
-    height: 152px;
-    z-index: 50;
-    top: 123px;
-    left: 282px;
-    text-align: center;
-    color: #fff;
-    h2{
-        font-size: 36px;
-        line-height: 48px;
-        margin-top: 20px;
-        margin-bottom: 1rem;
-    }
-    p{
-        line-height: 21px;
+    background-image: url(https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/main/app/assets/images/header_desktop.png);
+    background-size: cover;
+    background-position: 50%;
+    height: 420px;
+    margin-bottom: 30px;
+    &_slogan{
+        background: rgba(0,0,0,0.35);
+        width: 460px;
+        height: 152px;
+        text-align: center;
+        color: #fff;
+        h2{
+            font-size: 36px;
+            line-height: 48px;
+            margin-top: 20px;
+            margin-bottom: 1rem;
+        }
+        p{
+            line-height: 21px;
+        }
     }
 }
 
 // -----------------footer-----------------
 
 .footer{
-    padding: 50px 0;
-}
-
-.aboutUs{
-    width: 299px;
-    
-    h3{
-        font-size: $fz-l;
-        line-height: 32px;
-        margin-bottom: 1rem;
-    } 
-}
-
-.contact{
-    width: 299px;
-    margin-left: 20px;
-    h3{
-        font-size: $fz-l;
-        line-height: 32px;
-        margin-bottom: 1rem;
-    } 
-    li{
-        list-style-type: disc;
-        list-style-position: inside;
+    .container{
+        padding: 50px 42px;
     }
-    &_link{
-        display: inline-block;
-        &:hover{
-            color: #FF5E45;
-            transition: 0.3s;
+    &_about_us{
+        width: 42.95977%;
+        h3{
+            font-size: $fz-l;
+            line-height: 32px;
+            margin-bottom: 1rem;
+        } 
+    }
+    &_contact{
+        width: 42.95977%;
+        margin-left: 20px;
+        h3{
+            font-size: $fz-l;
+            line-height: 32px;
+            margin-bottom: 1rem;
+        } 
+        li{
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        &_link{
+            display: inline-block;
+            &:hover{
+                color: #FF5E45;
+                transition: 0.3s;
+            }
         }
     }
 }
 
-.logo_footer_l{
+.footer_logo_l{
     background-image: url(https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/d372b4767ea537d584a74590366906cef89254e0/app/assets/images/logo_l%40svg.svg);
     width: 244px;
     height: 49px;   
@@ -103,7 +101,7 @@
     margin-bottom: 22px;
 }
 
-.icon{
+.footer_icon{
     li{
         margin-left: 12px;
     }
@@ -115,5 +113,27 @@
     }
     .fa-facebook-square{
         color: #3A5795;
+    }
+}
+
+@media(max-width:576px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .footer_about{
+        flex-direction: column;
+        align-items: center;  
+        margin-bottom: 30px;  
+    }
+    .footer_about_us{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+    .footer_contact{
+        margin-left: 0;
+        width: 100%;
     }
 }

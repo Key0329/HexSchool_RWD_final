@@ -23,13 +23,8 @@ body {
     background: $secondary-color;
 }
 
-.wrap{
-    max-width: $width;
-    margin: 0 auto;
-}
-
 .container{
-    max-width: 940px;
+    max-width: $width;
     margin: 0 auto;
 }
 
