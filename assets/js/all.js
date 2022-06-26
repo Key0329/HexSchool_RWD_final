@@ -1,7 +1,15 @@
 "use strict";
 
-console.log('Hello!');
 $(document).ready(function () {
-  console.log('HesSchool Hello!');
+  $(".fa-bars").click(function (e) {
+    console.log("click");
+    $(".menu").toggleClass("menu_show");
+  });
+  $("body").click(function (e) {
+    if (!$(e.target).hasClass("fa-bars")) {
+      $(".menu").removeClass("menu_show");
+      ;
+    }
+  });
 });
 //# sourceMappingURL=all.js.map
