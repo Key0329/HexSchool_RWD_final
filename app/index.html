@@ -6,9 +6,10 @@ current: index
 ---
 
 <main class="main">
-    <div class="feature container">
+<!-- feature -->
+    <section class="feature container">
         <h3>客人總是在詢問<br>這麼好吃的秘訣是甚麼</h3>
-        <ul class="feature_items d-flex f-jcsa">
+        <ul class="feature_items d-flex f-jcse">
             <li>
                 <img src="https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/main/app/assets/images/feature_1.png" alt="feature_1">
                 <h4>台灣本土蔬菜</h4>
@@ -25,5 +26,81 @@ current: index
                 <p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
             </li>
         </ul>
-    </div>
+    </section>
+<!-- chef -->  
+    <section class="chef">
+        <div class="container d-flex f-aic">
+            <img src="https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/main/app/assets/images/main_chef_brown.png" alt="chef" class="chef_pic">
+            <div class="chef_content">
+                <h3>今日主廚：帕金森、梅在帕</h3>
+                <h4>Tody Chef: Plum in Shock</h4>
+                <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+            </div>
+        </div>
+    </section>
+<!-- feedback -->
+    <section class="feedback">
+        <div class="container">
+            <h3>聽聽別人的感想</h3>
+            <ul class="feedback_items d-flex f-jcsb">
+                <li class="d-flex">
+                    <div class="feedback_people d-flex f-aic">
+                        <img src="https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/main/app/assets/images/avatar_1.png" alt="avatar_1">
+                        <p>高雄一口吃</p>
+                    </div>
+                    <p class="feedback_content">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                    <p class="feedback_job"> -- 產品經理</p>
+                </li>
+                <li class="d-flex">
+                    <div class="feedback_people d-flex f-aic">
+                        <img src="https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/main/app/assets/images/avatar_2.png" alt="avatar_2">
+                        <p>廟口小霸王</p>
+                    </div>
+                    <p class="feedback_content">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                    <p class="feedback_job">  -- 金身道士</p>
+                </li>
+                <li class="d-flex">
+                    <div class="feedback_people d-flex f-aic">
+                        <img src="https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/main/app/assets/images/avatar_3.png" alt="avatar_3">
+                        <p>春天也來了</p>
+                    </div>
+                    <p class="feedback_content">自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+                    <p class="feedback_job">  -- 美麗萬分</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+<!-- position -->
+    <section class="position">
+        <div class="container">
+            <h3>我們的位置不太夠坐<br>要不要先定位呢？</h3>
+            <div class="position_content d-flex">
+                <img src="https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/main/app/assets/images/Map.png" alt="map">
+                <div class="reservation">
+                    <form class="d-flex">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" placeholder="六角講師吃尾牙">
+                        <label for="tel">電話</label>
+                        <input type="tel" id="tel" placeholder="02-1234567">
+                        <label for="mail">信箱</label>
+                        <input type="email" id="mail" placeholder="test@gmail.com">
+                        <label for="num">人數</label>
+                        <input type="number" id="num" placeholder="2">
+                        <label>是否需要素食</label>
+                        <div class="reservation_vegi d-flex f-aic">
+                            <label for="vegi_yes">是</label>
+                            <input type="radio" name="vegi" id="vegi_yes" value="true">
+                            <label for="vegi_no">否</label>
+                            <input type="radio" name="vegi" id="vegi_no" value="false" checked>
+                        </div>
+                        <div class="button d-flex f-jcfe">
+                            <button class="button_cancel" type="button">取消</button>
+                            <button class="button_submit" type="submit">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
