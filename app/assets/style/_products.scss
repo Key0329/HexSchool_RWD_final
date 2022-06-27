@@ -29,6 +29,28 @@
     }
 }
 
+@media(max-width:768px){
+    .products{
+        padding: 0 12px;
+    }
+    aside h3{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:576px){
+    .products{
+        flex-direction: column;
+        align-items: center;
+        aside{
+            width: 96.12903%;
+            margin-bottom: 22px;
+        }
+    }
+    
+}
+
 // products section
 
 .products_contents{
@@ -58,6 +80,7 @@
                 color: $primary-color;
                 border: 1px solid $primary-color;
                 transition: 0.3s;
+                border-left: none;
             }
         }
     }
@@ -73,7 +96,7 @@
             margin-right: 17px;
         }
         a:hover{
-            transform: scale(1.2);
+            opacity: 0.5;
         }
         &--num{
             width: 16px;
@@ -157,6 +180,83 @@
             &:hover{
                 background: #FF5E45;
                 color: #fff;
+            }
+        }
+    }
+    .ribbon{
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        top: -10px;
+        right: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        &::before{
+            content: "熱銷美食";
+            position: absolute;
+            width: 150%;
+            height: 21px;
+            background: #00CC99;
+            transform: rotate(-315deg) translateY(-10px);
+            color: #fff;
+            font-weight: bold;
+            font-size: $fz-xs;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            background: #13886b;
+            z-index: -1;
+            box-shadow: -80px -80px #13886b;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .products_contents_cards{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li{
+            width: 46%;
+        }
+    }
+}
+
+@media(max-width:576px){
+    .products_contents{
+        width: 96.12903%;
+        margin-left: 0;
+        &_toolbar{
+            flex-direction: column;
+            &--search{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            &--cart{
+                align-self: flex-end;
+                margin-bottom: 30px;
+            }
+        }
+        &_cards{
+            li{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &--price{
+                font-size: $fz-m;
             }
         }
     }
