@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
   $(".fa-bars").click(function (e) {
+    event.preventDefault();
     console.log("click");
     $(".menu").toggleClass("menu_show");
   });
