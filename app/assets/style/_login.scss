@@ -1,0 +1,78 @@
+.login{
+    flex-direction: column;
+    &_logo{
+        margin-bottom: 5px;
+    }
+    &_slogan{
+        font-size: $fz-m;
+        margin-bottom: 35px;
+        font-weight: bold;
+    }
+    &_content{
+        width: 300px;
+        padding: 15px;
+        border-top: 3px solid #FF5E45;
+        box-shadow: 3px 3px 4px 0 rgba(0,0,0,0.16);
+        flex-direction: column;
+        &_title{
+            font-size: $fz-s;
+            font-weight: bold;
+        }
+        &_form{
+            flex-direction: column;
+            width: 100%;
+            label{
+                line-height: 21px;
+                margin-top: 15px;
+                margin-bottom: 3px;
+            }
+            input{
+                width: 100%;
+                background: rgba(255,255,255,1);
+                border: 1px solid rgba(204,204,204,1);  
+                box-shadow: inset 0 1px 0 0 #ececec;
+                border-radius: 3px;
+                padding: 8px 0 8px 30px;
+            }
+            &_input{
+                position: relative;
+                i{
+                    position: absolute;
+                    top: 9px;
+                    left: 9px;
+                    opacity: 0.5;
+                }
+            }
+            a{
+                font-size: $fz-xs;
+                color: #FF5E45;
+                margin-bottom: 30px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            
+        }   
+        &_button{
+            button{
+                width: 125px;
+                height: 32px;
+                font-size: $fz-xs;
+                text-align: center;
+                color: #fff;
+                border-radius: 3px;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+            &--register{
+                background: rgba(0,0,0,0.35);
+            }
+            &--login{
+                background: rgba(245,108,35,1);
+            }
+        }
+    }
+}

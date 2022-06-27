@@ -162,6 +162,7 @@
         &--price{
             margin-bottom: 13px;
             font-family: "Roboto-Light";
+            font-size: 20px;
             span{
                 font-style: italic;
                 font-weight: bold;
@@ -247,16 +248,11 @@
                 margin-bottom: 30px;
             }
         }
-        &_cards{
-            li{
+        &_cards li{
+            width: 100%;
+            img{
                 width: 100%;
-                img{
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            &--price{
-                font-size: $fz-m;
+                height: auto;
             }
         }
     }

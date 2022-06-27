@@ -1,6 +1,31 @@
 ---
-title: YO
+title: 六角西餐廳-登入
 layout: ./app/layout.ejs
 engine: ejs
-current: index
+current: login
 ---
+
+<article class="login container d-flex f-aic">
+    <h2 class="login_logo"><img src="https://raw.githubusercontent.com/Key0329/HexSchool_RWD_final/111c852b1dcc4cbafb33ec698d560e9568640db6/app/assets/images/logo_l%40svg.svg" alt="六角西餐廳"></h2>
+    <p class="login_slogan">享受美食好味道</p>
+    <div class="login_content d-flex f-aic">
+        <h3 class="login_content_title">LOGIN</h3>
+        <form class="login_content_form d-flex">
+            <label for="email">Email Address*</label>
+            <div class="login_content_form_input">
+                <input type="email" id="email">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <label for="password">Password*</label>
+            <div class="login_content_form_input">
+                <input type="password" id="password">
+                <i class="fa-solid fa-key"></i>
+            </div>
+            <a href="#">忘記密碼？</a>
+            <div class="login_content_button d-flex f-jcsb">
+                <button class="login_content_button--register" type="button">註冊</button>
+                <button class="login_content_button--login" type="submit">登入</button>
+            </div>
+        </form>
+    </div>
+</article>
