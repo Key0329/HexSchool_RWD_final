@@ -430,7 +430,9 @@ body {
     margin-left: 20px;
     width: 48.93617%; }
   .position img {
-    width: 48.93617%; }
+    width: 48.93617%;
+    -o-object-fit: cover;
+       object-fit: cover; }
   .position form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -905,5 +907,9 @@ body {
     .register_content_group form {
       width: 95%;
       margin-bottom: 30px; } }
+
+@media (max-width: 375px) {
+  .register_content {
+    width: 95%; } }
 
 /*# sourceMappingURL=all.css.map */
